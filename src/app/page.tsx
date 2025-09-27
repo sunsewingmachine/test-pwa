@@ -4,7 +4,7 @@ export default function Home() {
 	return (
 		<div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
 			<h1>Hello This is sw understanding Project.</h1>
-			<h1> Stage 2</h1>
+			<h1> Stage 2b</h1>
 			<p id="p-offline-note3">Check for data, When Offline.</p>
 		</div>
 	);

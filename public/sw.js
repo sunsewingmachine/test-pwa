@@ -7,7 +7,7 @@ self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open(CACHE).then(c => c.addAll(CORE)).then(() => {
       console.log('[SW] core cached:', CORE);
-      	alert("SW installed!"); // for learning only, alerts in SW aren’t standard
+      	// alert("SW installed!"); // for learning only, alerts in SW aren’t standard
     })
   );
 });
