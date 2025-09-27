@@ -5,6 +5,7 @@ export default function Home() {
 		<div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
 			<h1>Hello This is sw understanding Project.</h1>
 			<h1> Stage 1</h1>
+			<p id="p-offline-note3">Not comes in Stage 1, When Offline.</p>
 		</div>
 	);
 }
