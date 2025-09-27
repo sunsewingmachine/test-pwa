@@ -3,7 +3,7 @@
 self.addEventListener("install", () => {
 	console.log("SW: Installed");
 
-	alert("SW installed old 7209d!"); // for learning only, alerts in SW aren’t standard
+	// alert("SW installed old 7209d!"); // for learning only, alerts in SW aren’t standard
 });
 
 self.addEventListener("activate", () => {
