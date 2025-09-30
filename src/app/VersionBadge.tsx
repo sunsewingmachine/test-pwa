@@ -5,5 +5,5 @@ export default function VersionBadge() {
 	useEffect(() => {
 		console.log("Version: v1");
 	}, []);
-	return <small id="id-version-badge">v2b</small>;
+	return <small id="id-version-badge">v3b</small>;
 }
