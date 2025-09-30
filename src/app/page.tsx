@@ -1,4 +1,5 @@
 import Image from "next/image";
+import VersionBadge from './VersionBadge';
 
 export default function Home() {
 	return (
@@ -6,6 +7,7 @@ export default function Home() {
 			<h1>Hello This is sw understanding Project.</h1>
 			<h1> Stage 4 (sim1) v2</h1>
 			<p id="p-offline-note3">Now, Cache First, Check for data, When Offline.</p>
+      <VersionBadge />
 		</div>
 	);
 }
