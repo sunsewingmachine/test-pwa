@@ -25,6 +25,7 @@ self.addEventListener("fetch", (e) => {
 	const req = e.request;
 	// Log all navigations (page loads)
 	// Cache-first for navigations (pages)
+	/*
 	if (e.request.mode === "navigate") {
 		e.respondWith(
 			(async () => {
@@ -40,6 +41,24 @@ self.addEventListener("fetch", (e) => {
 					// if no exact page cached, try '/', then offline.html
 					return (await caches.match("/")) || (await caches.match("/offline.html"));
 				}
+			})()
+		);
+		return;
+	}
+
+
+    */
+
+	// Cache-first for navigations (pages)
+	if (e.request.mode === "navigate") {
+		e.respondWith(
+			(async () => {
+				const cached = await caches.match(e.request);
+				if (cached) return cached; // serve old HTML instantly
+				const fresh = await fetch(e.request); // cache for next time
+				const c = await caches.open(CACHE);
+				c.put(e.request, fresh.clone());
+				return fresh;
 			})()
 		);
 		return;
